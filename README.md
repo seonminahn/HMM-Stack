@@ -52,3 +52,5 @@ The MATLAB code 'analyze_lead_lag' provides the probability of one point in a re
 ## License
 
 The HMM-stack algorithm is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation.
+
+The following citation should be included in any research reports, papers, or publications based on the HMM stack and the HMM-stack algorithm. 
