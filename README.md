@@ -31,7 +31,7 @@ Do not delete any files while running codes. These files are required to update 
 
 The MATLAB code 'get_age_estimate' finds age estimates of a benthic *δ<sup>18</sup>O* record by aligning the record with the HMM stack. To run the code, you should provide the file name of the core and age estimates of the top and the bottom of the core as follow.
 
-    get_age_estimate('coreName', age_top, age_bottom)
+    get_age_estimate(coreName, age_top, age_bottom)
 
 The code generates 'coreName_HMMstack.mat' which includes the following variables:
 
@@ -46,7 +46,7 @@ The code generates 'coreName_HMMstack.mat' which includes the following variable
 
 The MATLAB code 'analyze_lead_lag' provides the probability of one point in a record coreNAME1 leading to another point in a record coreNAME2. Before running this code, age estimates of coreNAME1 and coreNAME2 should be estimated using 'get_age_estimate'. To run this code, you should specify two points you want to analyze using their depths as follow. 
 
-    analyze_lead_lag('coreName1', depth1, 'coreName2', depth2)
+    analyze_lead_lag(coreName1, depth1, coreName2, depth2)
 
 
 ## License
