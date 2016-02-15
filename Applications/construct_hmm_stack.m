@@ -1,7 +1,8 @@
-% function construct_hmm_stack(recordInfo)
-
-clear
-recordInfo = 'recordSummary.txt';
+function construct_hmm_stack(recordInfo)
+%
+% example
+%     construct_hmm_stack('recordSummary.txt')
+%
 
 %% Load data information
 [name, b1, b2] = textread(recordInfo, '%s %f %f');
