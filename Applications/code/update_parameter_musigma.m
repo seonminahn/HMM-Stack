@@ -9,7 +9,8 @@
 %     end
 % end
 
-tolSIGMA = 1e-4;
+% tolSIGMA = 1e-4;
+tolSIGMA = 0.025;
 
 input_count = zeros(size(total_target, 1), num_seq);
 
@@ -25,7 +26,7 @@ for musigmaloc = 1 : size(total_target, 1)
     
     for i = completed_cores
         % load bin_mean_index, sample_seq, and input_scaled_new
-        load([resultsFolder coreNAME '_input' num2str(i) '_bb' num2str(bb) '_updateD'])
+        load([resultsFolder coreNAME '_input' num2str(i) '_iter' num2str(bb) '_updateD'])
         input_scaled_new(:,2) = input_scaled_new(:,2) + meanShift;
         
         binI = find(bin_mean_index == musigmaloc);
@@ -55,7 +56,7 @@ for musigmaloc = 1 : size(total_target, 1)
     
     for i = completed_cores
         % load bin_mean_index, sample_seq, and input_scaled_new
-        load([resultsFolder coreNAME '_input' num2str(i) '_bb' num2str(bb) '_updateD'])
+        load([resultsFolder coreNAME '_input' num2str(i) '_iter' num2str(bb) '_updateD'])
         input_scaled_new(:,2) = input_scaled_new(:,2) + meanShift;
         
         binI = find(bin_mean_index == musigmaloc);
@@ -90,7 +91,7 @@ if strcmp(target_est, 'linear')
         
         for i = completed_cores
             % load bin_mean_index, sample_seq, and input_scaled_new
-            load([resultsFolder coreNAME '_input' num2str(i) '_bb' num2str(bb) '_updateD'])
+            load([resultsFolder coreNAME '_input' num2str(i) '_iter' num2str(bb) '_updateD'])
             
             binI_p = find(bin_mean_index_p(:,1) == musigmaloc);
             

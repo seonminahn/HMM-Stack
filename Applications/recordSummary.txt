@@ -1,0 +1,3 @@
+GeoB1032_LR04age.txt 1.42 380
+GeoB1035_LR04age.txt 1.31 426
+GeoB1214_LR04age.txt 2.09 450
