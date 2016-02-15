@@ -27,6 +27,8 @@ This code generates 'Yourstack.txt', which is a new probabilistic stack construc
 
 Do not delete any files while running codes. These files are required to update each iteration. 
 
+To construct a valid probabilistic stack, at least two different *δ<sup>18</sup>O* valued samples should be assigned to each point in the stack. Otherwise, the variance term becomes too small to construct a valid emission model. To avoid this, even with a small number of records, the algorithm manually assigns a reasonably large value when a variance term is too small and prints an error message. Such cases did not occur when we constructed the HMM stack and the HMM_LR04 stack because we used sufficient records. 
+
 ### Age estimation
 
 The MATLAB code 'get_age_estimate' finds age estimates of a benthic *δ<sup>18</sup>O* record by aligning the record with the HMM stack. To run the code, you should provide the file name of the core and age estimates of the top and the bottom of the core as follow.
