@@ -14,6 +14,8 @@ All codes are written in MATLAB and located under the code folder.
 
 All *δ<sup>18</sup>O* record files should be located under the data folder. Each record should include three columns: depth, age, and data value. When age estimates are unavailable, you can leave them as NaN.
 
+To run these applications, please download the Application folder and the HMM stack and locate them under the same folder. 
+
 ### Probabilistic stack
 
 The MATLAB code 'construct_hmm_stack' constructs a probabilistic stack using cores listed in the summary file. To construct a probabilistic stack with your own benthic *δ<sup>18</sup>O* records, you should modify the 'recordSummary.txt' file, located under the data folder. Each line of this summary file includes three columns: the file name of the core, age estimates of the top and the bottom of the core. Then, you can run the MATLAB code 'construct_hmm_stack' with the summary file as follows. 
