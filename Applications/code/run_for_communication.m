@@ -253,4 +253,12 @@ toc
 disp(' ')
 
 
+total_record(:,1) = total_target(:,1);
+total_record(:,2) = total_mu;
+total_record(:,3) = total_sigma;
+total_record(:,4) = total_mu+1.96*total_sigma;
+total_record(:,5) = total_mu-1.96*total_sigma;
+
+save([resultsFolder updateFileN num2str(bb) '.txt'], 'total_record', '-ascii')
+
 
