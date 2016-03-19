@@ -51,11 +51,3 @@ end
 
 cd ..
 
-total_record(:,1) = total_target(:,1);
-total_record(:,2) = total_mu;
-total_record(:,3) = total_sigma;
-total_record(:,4) = total_mu+1.96*total_sigma;
-total_record(:,5) = total_mu-1.96*total_sigma;
-
-save('newstack.mat', 'total_record')
-save('newstack.txt', 'total_record', '-ascii')
