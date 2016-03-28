@@ -1,8 +1,8 @@
-# HMM-stack
+# Probabilistic stacks
 
-HMM stack (HMM_stack.txt): Probabilistic stack constructed from 180 benthic *δ<sup>18</sup>O* records. (Detailed information about the records is given in the metatdata table of [1].)
+Prob-stack (Prob_stack.txt): Probabilistic stack constructed from 180 benthic *δ<sup>18</sup>O* records. (Detailed information about the records is given in the metatdata table of [1].)
 
-HMM_LR04 stack (HMM_LR04_stack.txt): Probabilistic stack constructed from the LR04 cores.
+Prob-LR04-stack (Prob_LR04_stack.txt): Probabilistic stack constructed from the LR04 cores.
 
 Both stack files contain five columns: Age, *δ<sup>18</sup>O* value [‰], standard deviation of *δ<sup>18</sup>O* value, upper bound of 95% interval, and lower bound of 95% interval. 
 
@@ -22,16 +22,16 @@ The MATLAB code 'construct_hmm_stack' constructs a probabilistic stack using cor
 
     construct_hmm_stack('recordSummary.txt')
 
-This code generates 'newStack_iterN.txt', which is a new probabilistic stack constructed from the cores listed in 'recordSummary.txt'. It follows the same format as HMMstack.txt. In addition to the stack file, while running, the code generates following files: 
+This code generates 'newStack_iterN.txt', which is a new probabilistic stack constructed from the cores listed in 'recordSummary.txt'. It follows the same format as Prob_stack.txt. In addition to the stack file, while running, the code generates following files: 
 
 * newStack_iterN.mat, newStack_iterN_updateD.mat (data files that are saved after the N<sup>th</sup> iteration)
 * newStack_inputM_iterN.mat, newStack_inputM_iterN_updateD.mat (data files that are saved after aligning the M<sup>th</sup> benthic *δ<sup>18</sup>O* record to the stack generated after the N<sup>th</sup> iteration)
 
 Do not delete any files while running codes. These files are required to update each iteration. 
 
-To construct a valid probabilistic stack, at least two different *δ<sup>18</sup>O* valued samples should be assigned to each point in the stack. Otherwise, the variance term becomes too small to construct a valid emission model. To avoid this, even with a small number of records, the algorithm manually assigns a reasonably large value when a variance term is too small and prints an error message. Such cases did not occur when we constructed the HMM stack and the HMM_LR04 stack because we used sufficient records. 
+To construct a valid probabilistic stack, at least two different *δ<sup>18</sup>O* valued samples should be assigned to each point in the stack. Otherwise, the variance term becomes too small to construct a valid emission model. To avoid this, even with a small number of records, the algorithm manually assigns a reasonably large value when a variance term is too small and prints an error message. Such cases did not occur when we constructed the Prob-stack and the Prob-LR04-stack because we used sufficient records. 
 
-Note that a construction of the stack requires extensive use of high performance computing resourses. 
+Note that a construction of the stack requires extensive use of high performance computing resources. Constructing the Prob-stack took about one month with 180 computing nodes as it takes over 100 hours for a high-resolution record to complete one iteration. It took about 30 minutes to construct a stack on a desktop (2.7 GHz Intel Core i% processor & 16GB memory) using the three example records as provided in 'recordSummary.txt'.
 
 ### Age estimation
 
