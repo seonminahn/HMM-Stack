@@ -1,8 +1,8 @@
 # HMM-stack
 
-HMM stack (HMM_stack.txt): Probabilistic stack constructed from 180 benthic *δ<sup>18</sup>O* records (Detailed information about the records is given in the metatdata table of [1].
+HMM stack (HMM_stack.txt): Probabilistic stack constructed from 180 benthic *δ<sup>18</sup>O* records. (Detailed information about the records is given in the metatdata table of [1].)
 
-HMM_LR04 stack (HMM_LR04_stack.txt): Probabilistic stack constructed from the LR04 cores
+HMM_LR04 stack (HMM_LR04_stack.txt): Probabilistic stack constructed from the LR04 cores.
 
 Both stack files contain five columns: Age, *δ<sup>18</sup>O* value [‰], standard deviation of *δ<sup>18</sup>O* value, upper bound of 95% interval, and lower bound of 95% interval. 
 
