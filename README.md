@@ -22,10 +22,10 @@ The MATLAB code 'construct_hmm_stack' constructs a probabilistic stack using cor
 
     construct_hmm_stack('recordSummary.txt')
 
-This code generates 'Yourstack.txt', which is a new probabilistic stack constructed from the cores listed in 'recordSummary.txt'. It follows the same format as HMMstack.txt. In addition to the stack file, while running, the code generates following files: 
+This code generates 'newStack_iterN.txt', which is a new probabilistic stack constructed from the cores listed in 'recordSummary.txt'. It follows the same format as HMMstack.txt. In addition to the stack file, while running, the code generates following files: 
 
-* YourStack_iterN.mat, YourStack_iterN_updateD.mat (data files that are saved after the N<sup>th</sup> iteration)
-* YourStack_inputM_iterN.mat, YourStack_inputM_iterN_updateD.mat (data files that are saved after aligning the M<sup>th</sup> benthic *δ<sup>18</sup>O* record to the stack generated after the N<sup>th</sup> iteration)
+* newStack_iterN.mat, newStack_iterN_updateD.mat (data files that are saved after the N<sup>th</sup> iteration)
+* newStack_inputM_iterN.mat, newStack_inputM_iterN_updateD.mat (data files that are saved after aligning the M<sup>th</sup> benthic *δ<sup>18</sup>O* record to the stack generated after the N<sup>th</sup> iteration)
 
 Do not delete any files while running codes. These files are required to update each iteration. 
 
