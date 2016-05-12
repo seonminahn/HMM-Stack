@@ -57,5 +57,13 @@ resultNS = ['age_estimate_' coreName '_input1_iter'];
 resultS = ['../../Results/' date '/age_estimate_' coreName '_input1_iter*'];
 calc_median_ali_dp_fine_half; 
 plot_align;
+save(['../../Results/' date '/age_estimate_' coreName '_fullData'])
+
+core_input = input_scaled_new(:,2);
+core_median = median_ali;
+core_upper95 = upper_95;
+core_lower95 = lower_95;
+core_ratio = ali_ratio;
+save(['../../Results/' date '/age_estimate_' coreName '_summary'], 'core_input', 'core_median', 'core_upper95', 'core_lower95', 'core_ratio')
 
 cd ..
