@@ -2,6 +2,7 @@ function get_age_estimate(coreName, age_top, age_bottom)
 %
 % example: 
 %     get_age_estimate('GeoB1032_LR04age', 1.42, 380)
+%     get_age_estimate('GeoB1214_LR04age', 2.09, 450)
 %
 
 % Criteria of convergence
