@@ -1,7 +1,7 @@
 function analyze_lead_lag(coreName1, target_depth1, coreName2, target_depth2)
 %
 % example:
-%     analyze_lead_lag('GeoB1035_LR04age', 2, 'GeoB1214_LR04age', 2.5)
+%     analyze_lead_lag('GeoB1032_LR04age', 3, 'GeoB1214_LR04age', 2.5)
 %
 
 %% Find the results of age estimations 
