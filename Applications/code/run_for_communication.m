@@ -171,7 +171,7 @@ if isempty(preD)
     total_sigma = 0*ori_mu_normalized + 0.25;
     
     if exactStart == -1
-        newstack = load('../../HMM_stack.txt');
+        newstack = load('../../Prob_stack.txt');
         total_mu = newstack(:,2);
         total_sigma = newstack(:,3);
     end
