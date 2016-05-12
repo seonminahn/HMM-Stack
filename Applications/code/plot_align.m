@@ -148,3 +148,4 @@ a1 = annotation('textbox', [0.1 0.9 0.03 0.05], 'String', 'a', 'Fontsize', 24, '
 a2 = annotation('textbox', [0.1 0.3 0.03 0.05], 'String', 'c', 'Fontsize', 24, 'FontWeight', 'bold', 'LineStyle', 'none');
 a3 = annotation('textbox', [0.1 0.6 0.03 0.05], 'String', 'b', 'Fontsize', 24, 'FontWeight', 'bold', 'LineStyle', 'none');
 
+clear h1
