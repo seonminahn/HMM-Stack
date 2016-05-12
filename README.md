@@ -39,7 +39,7 @@ The MATLAB code 'get_age_estimate' finds age estimates of a benthic *δ<sup>18</
 
     get_age_estimate(coreName, age_top, age_bottom)
 
-The code generates 'coreName_HMMstack.mat' which includes the following variables:
+The code generates 'coreName_ProbStack.mat' which includes the following variables:
 
 * core_input (benthic *δ<sup>18</sup>O* values of the core)
 * core_median (median age estimates of the core) 
